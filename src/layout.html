@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta property="og:description" content="CSS methodologies are formal, documented systems for authoring CSS in a way that allows us to develop, maintain and scale the front-end as a set of small, isolated modules">
+    <meta property="og:image" content="http://slide.yuripertamax.me/introduction-to-css-methodologies/dist/img/cover.png">
+  </head>
+  <body>
+    <textarea id="source"><%= content %></textarea>
+    <script src="js/remark.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="js/remark.language.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark'
+        }) ;
+    </script>
+  </body>
+</html>
